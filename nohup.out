@@ -1,0 +1,265 @@
+{"level":"info","ts":1696904170.1789424,"msg":"using adjacent Caddyfile"}
+{"level":"info","ts":1696904170.182948,"logger":"admin","msg":"admin endpoint started","address":":2020","enforce_origin":false,"origins":["//:2020"]}
+{"level":"warn","ts":1696904170.1829998,"logger":"admin","msg":"admin endpoint on open interface; host checking disabled","address":":2020"}
+{"level":"info","ts":1696904170.1832862,"logger":"http.auto_https","msg":"server is listening only on the HTTPS port but has no TLS connection policies; adding one to enable TLS","server_name":"srv0","https_port":443}
+{"level":"info","ts":1696904170.1833217,"logger":"http.auto_https","msg":"enabling automatic HTTP->HTTPS redirects","server_name":"srv0"}
+{"level":"info","ts":1696904170.1840706,"logger":"http","msg":"enabling HTTP/3 listener","addr":":443"}
+{"level":"info","ts":1696904170.1841834,"logger":"tls","msg":"cleaning storage unit","description":"FileStorage:/root/.local/share/caddy"}
+{"level":"info","ts":1696904170.184348,"logger":"tls","msg":"finished cleaning storage units"}
+{"level":"info","ts":1696904170.1844852,"logger":"tls.cache.maintenance","msg":"started background certificate maintenance","cache":"0xc00034c680"}
+{"level":"info","ts":1696904170.1845028,"logger":"tls.cache.maintenance","msg":"stopped background certificate maintenance","cache":"0xc00034c680"}
+Error: loading initial config: loading new config: http app module: start: listen udp :443: bind: address already in use
+{"level":"info","ts":1702340935.0681465,"msg":"using adjacent Caddyfile"}
+{"level":"info","ts":1702340935.0743914,"logger":"admin","msg":"admin endpoint started","address":":2020","enforce_origin":false,"origins":["//:2020"]}
+{"level":"warn","ts":1702340935.0744607,"logger":"admin","msg":"admin endpoint on open interface; host checking disabled","address":":2020"}
+{"level":"info","ts":1702340935.075234,"logger":"http.auto_https","msg":"server is listening only on the HTTPS port but has no TLS connection policies; adding one to enable TLS","server_name":"srv0","https_port":443}
+{"level":"info","ts":1702340935.075288,"logger":"http.auto_https","msg":"enabling automatic HTTP->HTTPS redirects","server_name":"srv0"}
+{"level":"info","ts":1702340935.075312,"logger":"tls.cache.maintenance","msg":"started background certificate maintenance","cache":"0xc0006fa000"}
+{"level":"info","ts":1702340935.0771134,"logger":"http","msg":"enabling HTTP/3 listener","addr":":443"}
+{"level":"info","ts":1702340935.0774236,"logger":"tls","msg":"cleaning storage unit","description":"FileStorage:/root/.local/share/caddy"}
+{"level":"info","ts":1702340935.0879934,"logger":"http.log","msg":"server running","name":"srv0","protocols":["h1","h2","h3"]}
+{"level":"info","ts":1702340935.0881689,"logger":"http.log","msg":"server running","name":"remaining_auto_https_redirects","protocols":["h1","h2","h3"]}
+{"level":"info","ts":1702340935.0881822,"logger":"http","msg":"enabling automatic TLS certificate management","domains":["passwords.transformers.agency","workspace.transformers.agency","office.transformers.agency","chat.transformers.agency","drive.workspace.transformers.agency","dashboards.transformers.agency"]}
+{"level":"info","ts":1702340935.0936918,"logger":"tls","msg":"finished cleaning storage units"}
+{"level":"info","ts":1702340935.0979507,"msg":"autosaved config (load with --resume flag)","file":"/root/.config/caddy/autosave.json"}
+{"level":"info","ts":1702340935.097978,"msg":"serving initial configuration"}
+{"level":"error","ts":1702340963.8900049,"logger":"http.log.error","msg":"dial tcp 127.0.0.1:8088: connect: connection refused","request":{"remote_ip":"88.99.26.177","remote_port":"45002","client_ip":"88.99.26.177","proto":"HTTP/1.1","method":"GET","host":"drive.workspace.transformers.agency","uri":"/","headers":{"Pragma":["no-cache"],"Sec-Fetch-Dest":["document"],"Sec-Fetch-Mode":["navigate"],"Accept-Language":["en-US;q=0.8,en;q=0.7"],"User-Agent":["Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.5993.80 Mobile Safari/537.36"],"Accept-Encoding":["gzip"],"Accept":["text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7"],"Connection":["keep-alive"],"Cache-Control":["no-cache"],"Sec-Ch-Ua-Platform":["Linux"],"Upgrade-Insecure-Requests":["1"]},"tls":{"resumed":false,"version":772,"cipher_suite":4865,"proto":"http/1.1","server_name":"drive.workspace.transformers.agency"}},"duration":0.001996861,"status":502,"err_id":"wgtgsc0ec","err_trace":"reverseproxy.statusError (reverseproxy.go:1248)"}
+{"level":"info","ts":1702340996.141462,"msg":"shutting down","signal":"SIGINT"}
+{"level":"warn","ts":1702340996.1417289,"msg":"exiting; byeee!! 👋","signal":"SIGINT"}
+{"level":"info","ts":1702340996.1418607,"logger":"http","msg":"servers shutting down with eternal grace period"}
+{"level":"info","ts":1702340996.1424975,"logger":"admin","msg":"stopped previous server","address":":2020"}
+{"level":"info","ts":1702340996.1425335,"msg":"shutdown complete","signal":"SIGINT","exit_code":0}
+{"level":"info","ts":1704962214.7050443,"msg":"using adjacent Caddyfile"}
+{"level":"warn","ts":1704962214.7142766,"msg":"Caddyfile input is not formatted; run 'caddy fmt --overwrite' to fix inconsistencies","adapter":"caddyfile","file":"Caddyfile","line":21}
+{"level":"info","ts":1704962214.7163975,"logger":"admin","msg":"admin endpoint started","address":":2020","enforce_origin":false,"origins":["//:2020"]}
+{"level":"warn","ts":1704962214.7165105,"logger":"admin","msg":"admin endpoint on open interface; host checking disabled","address":":2020"}
+{"level":"info","ts":1704962214.7174926,"logger":"http.auto_https","msg":"server is listening only on the HTTPS port but has no TLS connection policies; adding one to enable TLS","server_name":"srv0","https_port":443}
+{"level":"info","ts":1704962214.7175446,"logger":"http.auto_https","msg":"enabling automatic HTTP->HTTPS redirects","server_name":"srv0"}
+{"level":"info","ts":1704962214.7186327,"logger":"http","msg":"enabling HTTP/3 listener","addr":":443"}
+{"level":"info","ts":1704962214.718793,"logger":"tls","msg":"cleaning storage unit","description":"FileStorage:/root/.local/share/caddy"}
+{"level":"info","ts":1704962214.7190635,"logger":"tls","msg":"finished cleaning storage units"}
+{"level":"info","ts":1704962214.7194388,"logger":"tls.cache.maintenance","msg":"started background certificate maintenance","cache":"0xc00051e080"}
+{"level":"info","ts":1704962214.7194626,"logger":"tls.cache.maintenance","msg":"stopped background certificate maintenance","cache":"0xc00051e080"}
+Error: loading initial config: loading new config: http app module: start: listen udp :443: bind: address already in use
+caddy.HomeDir=/root
+caddy.AppDataDir=/root/.local/share/caddy
+caddy.AppConfigDir=/root/.config/caddy
+caddy.ConfigAutosavePath=/root/.config/caddy/autosave.json
+caddy.Version=v2.7.4 h1:J8nisjdOxnYHXlorUKXY75Gr6iBfudfoGhrJ8t7/flI=
+runtime.GOOS=linux
+runtime.GOARCH=amd64
+runtime.Compiler=gc
+runtime.NumCPU=12
+runtime.GOMAXPROCS=12
+runtime.Version=go1.21.0
+os.Getwd=/home/adminuser/client_setup
+
+SHELL=/bin/bash
+LC_ADDRESS=C.UTF-8
+LC_NAME=C.UTF-8
+COMPOSE_PROJECT_NAME=redash
+LC_MONETARY=C.UTF-8
+PWD=/home/adminuser/client_setup
+LOGNAME=root
+XDG_SESSION_TYPE=tty
+MOTD_SHOWN=pam
+HOME=/root
+LANG=C.UTF-8
+LC_PAPER=C.UTF-8
+LS_COLORS=rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:
+SSH_CONNECTION=102.176.94.9 11081 63.250.53.234 22
+LESSCLOSE=/usr/bin/lesspipe %s %s
+XDG_SESSION_CLASS=user
+TERM=xterm-256color
+LC_IDENTIFICATION=C.UTF-8
+LESSOPEN=| /usr/bin/lesspipe %s
+USER=root
+COMPOSE_FILE=/opt/redash/docker-compose.yml
+SHLVL=0
+LC_TELEPHONE=C.UTF-8
+LC_MEASUREMENT=C.UTF-8
+XDG_SESSION_ID=12049
+XDG_RUNTIME_DIR=/run/user/0
+SSH_CLIENT=102.176.94.9 11081 22
+LC_TIME=C.UTF-8
+XDG_DATA_DIRS=/usr/local/share:/usr/share:/var/lib/snapd/desktop
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/0/bus
+SSH_TTY=/dev/pts/4
+LC_NUMERIC=C.UTF-8
+OLDPWD=/
+_=/usr/bin/nohup
+{"level":"info","ts":1708276139.8549573,"msg":"using provided configuration","config_file":"/home/adminuser/client_setup/Caddyfile","config_adapter":""}
+{"level":"warn","ts":1708276139.8608954,"msg":"Caddyfile input is not formatted; run 'caddy fmt --overwrite' to fix inconsistencies","adapter":"caddyfile","file":"/home/adminuser/client_setup/Caddyfile","line":6}
+{"level":"info","ts":1708276139.862975,"logger":"admin","msg":"admin endpoint started","address":":2020","enforce_origin":false,"origins":["//:2020"]}
+{"level":"warn","ts":1708276139.8630617,"logger":"admin","msg":"admin endpoint on open interface; host checking disabled","address":":2020"}
+{"level":"info","ts":1708276139.863638,"logger":"tls.cache.maintenance","msg":"started background certificate maintenance","cache":"0xc0003d6e00"}
+{"level":"info","ts":1708276139.8636994,"logger":"http.auto_https","msg":"server is listening only on the HTTPS port but has no TLS connection policies; adding one to enable TLS","server_name":"srv0","https_port":443}
+{"level":"info","ts":1708276139.8639135,"logger":"http.auto_https","msg":"enabling automatic HTTP->HTTPS redirects","server_name":"srv0"}
+{"level":"info","ts":1708276139.8655794,"logger":"http","msg":"enabling HTTP/3 listener","addr":":443"}
+{"level":"info","ts":1708276139.8656018,"logger":"tls","msg":"cleaning storage unit","description":"FileStorage:/root/.local/share/caddy"}
+{"level":"info","ts":1708276139.865693,"logger":"tls.cache.maintenance","msg":"stopped background certificate maintenance","cache":"0xc0003d6e00"}
+Error: loading initial config: loading new config: http app module: start: listen udp :443: bind: address already in use
+caddy.HomeDir=/root
+caddy.AppDataDir=/root/.local/share/caddy
+caddy.AppConfigDir=/root/.config/caddy
+caddy.ConfigAutosavePath=/root/.config/caddy/autosave.json
+caddy.Version=v2.7.4 h1:J8nisjdOxnYHXlorUKXY75Gr6iBfudfoGhrJ8t7/flI=
+runtime.GOOS=linux
+runtime.GOARCH=amd64
+runtime.Compiler=gc
+runtime.NumCPU=12
+runtime.GOMAXPROCS=12
+runtime.Version=go1.21.0
+os.Getwd=/home/adminuser/client_setup
+
+SHELL=/bin/bash
+LC_ADDRESS=C.UTF-8
+LC_NAME=C.UTF-8
+COMPOSE_PROJECT_NAME=redash
+LC_MONETARY=C.UTF-8
+PWD=/home/adminuser/client_setup
+LOGNAME=root
+XDG_SESSION_TYPE=tty
+MOTD_SHOWN=pam
+HOME=/root
+LANG=C.UTF-8
+LC_PAPER=C.UTF-8
+LS_COLORS=rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:
+SSH_CONNECTION=102.176.94.9 11081 63.250.53.234 22
+LESSCLOSE=/usr/bin/lesspipe %s %s
+XDG_SESSION_CLASS=user
+TERM=xterm-256color
+LC_IDENTIFICATION=C.UTF-8
+LESSOPEN=| /usr/bin/lesspipe %s
+USER=root
+COMPOSE_FILE=/opt/redash/docker-compose.yml
+SHLVL=0
+LC_TELEPHONE=C.UTF-8
+LC_MEASUREMENT=C.UTF-8
+XDG_SESSION_ID=12049
+XDG_RUNTIME_DIR=/run/user/0
+SSH_CLIENT=102.176.94.9 11081 22
+LC_TIME=C.UTF-8
+XDG_DATA_DIRS=/usr/local/share:/usr/share:/var/lib/snapd/desktop
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/0/bus
+SSH_TTY=/dev/pts/4
+LC_NUMERIC=C.UTF-8
+OLDPWD=/
+_=/usr/bin/nohup
+{"level":"info","ts":1708276309.3058455,"msg":"using provided configuration","config_file":"/home/adminuser/client_setup/Caddyfile","config_adapter":""}
+{"level":"warn","ts":1708276309.317816,"msg":"Caddyfile input is not formatted; run 'caddy fmt --overwrite' to fix inconsistencies","adapter":"caddyfile","file":"/home/adminuser/client_setup/Caddyfile","line":6}
+caddy.HomeDir=/root
+caddy.AppDataDir=/root/.local/share/caddy
+caddy.AppConfigDir=/root/.config/caddy
+caddy.ConfigAutosavePath=/root/.config/caddy/autosave.json
+caddy.Version=v2.7.4 h1:J8nisjdOxnYHXlorUKXY75Gr6iBfudfoGhrJ8t7/flI=
+runtime.GOOS=linux
+runtime.GOARCH=amd64
+runtime.Compiler=gc
+runtime.NumCPU=12
+runtime.GOMAXPROCS=12
+runtime.Version=go1.21.0
+os.Getwd=/home/adminuser/client_setup
+
+SHELL=/bin/bash
+LC_ADDRESS=C.UTF-8
+LC_NAME=C.UTF-8
+COMPOSE_PROJECT_NAME=redash
+LC_MONETARY=C.UTF-8
+PWD=/home/adminuser/client_setup
+LOGNAME=root
+XDG_SESSION_TYPE=tty
+MOTD_SHOWN=pam
+HOME=/root
+LANG=C.UTF-8
+LC_PAPER=C.UTF-8
+LS_COLORS=rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:
+SSH_CONNECTION=102.176.94.9 11081 63.250.53.234 22
+LESSCLOSE=/usr/bin/lesspipe %s %s
+XDG_SESSION_CLASS=user
+TERM=xterm-256color
+LC_IDENTIFICATION=C.UTF-8
+LESSOPEN=| /usr/bin/lesspipe %s
+USER=root
+COMPOSE_FILE=/opt/redash/docker-compose.yml
+SHLVL=0
+LC_TELEPHONE=C.UTF-8
+LC_MEASUREMENT=C.UTF-8
+XDG_SESSION_ID=12049
+XDG_RUNTIME_DIR=/run/user/0
+SSH_CLIENT=102.176.94.9 11081 22
+LC_TIME=C.UTF-8
+XDG_DATA_DIRS=/usr/local/share:/usr/share:/var/lib/snapd/desktop
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/0/bus
+SSH_TTY=/dev/pts/4
+LC_NUMERIC=C.UTF-8
+OLDPWD=/
+_=/usr/bin/nohup
+{"level":"info","ts":1708276309.318474,"msg":"using provided configuration","config_file":"/home/adminuser/client_setup/Caddyfile","config_adapter":""}
+{"level":"info","ts":1708276309.3194005,"logger":"admin","msg":"admin endpoint started","address":":2020","enforce_origin":false,"origins":["//:2020"]}
+{"level":"warn","ts":1708276309.3194394,"logger":"admin","msg":"admin endpoint on open interface; host checking disabled","address":":2020"}
+{"level":"info","ts":1708276309.3200116,"logger":"http.auto_https","msg":"server is listening only on the HTTPS port but has no TLS connection policies; adding one to enable TLS","server_name":"srv0","https_port":443}
+{"level":"info","ts":1708276309.3200586,"logger":"http.auto_https","msg":"enabling automatic HTTP->HTTPS redirects","server_name":"srv0"}
+{"level":"info","ts":1708276309.3202696,"logger":"tls.cache.maintenance","msg":"started background certificate maintenance","cache":"0xc000826e80"}
+{"level":"info","ts":1708276309.3220637,"logger":"http","msg":"enabling HTTP/3 listener","addr":":443"}
+{"level":"info","ts":1708276309.3221772,"logger":"tls.cache.maintenance","msg":"stopped background certificate maintenance","cache":"0xc000826e80"}
+Error: loading initial config: loading new config: http app module: start: listen udp :443: bind: address already in use
+{"level":"warn","ts":1708276309.323893,"msg":"Caddyfile input is not formatted; run 'caddy fmt --overwrite' to fix inconsistencies","adapter":"caddyfile","file":"/home/adminuser/client_setup/Caddyfile","line":6}
+{"level":"info","ts":1708276309.325269,"logger":"admin","msg":"admin endpoint started","address":":2020","enforce_origin":false,"origins":["//:2020"]}
+{"level":"warn","ts":1708276309.325301,"logger":"admin","msg":"admin endpoint on open interface; host checking disabled","address":":2020"}
+{"level":"info","ts":1708276309.3257117,"logger":"http.auto_https","msg":"server is listening only on the HTTPS port but has no TLS connection policies; adding one to enable TLS","server_name":"srv0","https_port":443}
+{"level":"info","ts":1708276309.3257456,"logger":"http.auto_https","msg":"enabling automatic HTTP->HTTPS redirects","server_name":"srv0"}
+{"level":"info","ts":1708276309.327056,"logger":"tls.cache.maintenance","msg":"started background certificate maintenance","cache":"0xc00049fb80"}
+{"level":"info","ts":1708276309.327647,"logger":"http","msg":"enabling HTTP/3 listener","addr":":443"}
+{"level":"info","ts":1708276309.3277607,"logger":"tls.cache.maintenance","msg":"stopped background certificate maintenance","cache":"0xc00049fb80"}
+{"level":"info","ts":1708276309.3277516,"logger":"tls","msg":"cleaning storage unit","description":"FileStorage:/root/.local/share/caddy"}
+Error: loading initial config: loading new config: http app module: start: listen udp :443: bind: address already in use
+caddy.HomeDir=/root
+caddy.AppDataDir=/root/.local/share/caddy
+caddy.AppConfigDir=/root/.config/caddy
+caddy.ConfigAutosavePath=/root/.config/caddy/autosave.json
+caddy.Version=v2.7.4 h1:J8nisjdOxnYHXlorUKXY75Gr6iBfudfoGhrJ8t7/flI=
+runtime.GOOS=linux
+runtime.GOARCH=amd64
+runtime.Compiler=gc
+runtime.NumCPU=12
+runtime.GOMAXPROCS=12
+runtime.Version=go1.21.0
+os.Getwd=/home/adminuser/client_setup
+
+LC_ADDRESS=C.UTF-8
+LC_NAME=C.UTF-8
+LC_MONETARY=C.UTF-8
+LANG=C.UTF-8
+LC_PAPER=C.UTF-8
+LS_COLORS=rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:
+TERM=xterm-256color
+LC_IDENTIFICATION=C.UTF-8
+LC_TELEPHONE=C.UTF-8
+LC_MEASUREMENT=C.UTF-8
+LC_TIME=C.UTF-8
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin
+LC_NUMERIC=C.UTF-8
+MAIL=/var/mail/root
+LOGNAME=root
+USER=root
+HOME=/root
+SHELL=/bin/bash
+SUDO_COMMAND=/usr/bin/nohup /usr/bin/caddy run --environ --config /home/adminuser/client_setup/Caddyfile
+SUDO_USER=root
+SUDO_UID=0
+SUDO_GID=0
+{"level":"info","ts":1708276330.5557644,"msg":"using provided configuration","config_file":"/home/adminuser/client_setup/Caddyfile","config_adapter":""}
+{"level":"warn","ts":1708276330.5586865,"msg":"Caddyfile input is not formatted; run 'caddy fmt --overwrite' to fix inconsistencies","adapter":"caddyfile","file":"/home/adminuser/client_setup/Caddyfile","line":6}
+{"level":"info","ts":1708276330.559984,"logger":"admin","msg":"admin endpoint started","address":":2020","enforce_origin":false,"origins":["//:2020"]}
+{"level":"warn","ts":1708276330.560035,"logger":"admin","msg":"admin endpoint on open interface; host checking disabled","address":":2020"}
+{"level":"info","ts":1708276330.5606315,"logger":"tls.cache.maintenance","msg":"started background certificate maintenance","cache":"0xc000578680"}
+{"level":"info","ts":1708276330.5608034,"logger":"http.auto_https","msg":"server is listening only on the HTTPS port but has no TLS connection policies; adding one to enable TLS","server_name":"srv0","https_port":443}
+{"level":"info","ts":1708276330.5608418,"logger":"http.auto_https","msg":"enabling automatic HTTP->HTTPS redirects","server_name":"srv0"}
+{"level":"info","ts":1708276330.5630846,"logger":"http","msg":"enabling HTTP/3 listener","addr":":443"}
+{"level":"info","ts":1708276330.5631363,"logger":"tls","msg":"cleaning storage unit","description":"FileStorage:/root/.local/share/caddy"}
+{"level":"info","ts":1708276330.5632315,"logger":"tls.cache.maintenance","msg":"stopped background certificate maintenance","cache":"0xc000578680"}
+Error: loading initial config: loading new config: http app module: start: listen udp :443: bind: address already in use

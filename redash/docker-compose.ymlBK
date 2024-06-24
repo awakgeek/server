@@ -1,0 +1,62 @@
+version: '2'
+
+x-redash-service: &redash-service
+  image: redash/redash:latest
+  depends_on:
+    - postgres
+    - redis
+  env_file: ./redash.env
+
+services:
+  server:
+    <<: *redash-service
+    command: server
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.redash.rule=Host(`dashboards.transformers.agency`)"
+      - "traefik.http.routers.redash.entrypoints=websecure"
+      - "traefik.http.routers.redash.tls.certresolver=myresolver"
+      - "traefik.http.routers.redash.middlewares=redirect-to-https"
+      - "traefik.docker.network=traefik"
+      - "traefik.http.services.redash.loadbalancer.server.port=5001"
+    networks:
+      - default
+      - traefik
+
+  scheduler:
+    <<: *redash-service
+    command: scheduler
+    networks:
+      - default
+      - traefik
+
+  worker:
+    <<: *redash-service
+    command: worker
+    networks:
+      - default
+      - traefik
+
+  redis:
+    image: redis:5.0-alpine
+    networks:
+      - default
+
+  postgres:
+    image: postgres:9.6-alpine
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+    environment:
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
+    networks:
+      - default
+
+volumes:
+  postgres-data:
+
+networks:
+  traefik:
+    external: true
+  default:
+    external: false
+

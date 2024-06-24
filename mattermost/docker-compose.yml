@@ -1,0 +1,46 @@
+version: '2'
+
+services:
+  mattermost:
+    image: mattermost/mattermost-prod-app
+    ports:
+      - "8065:8065"
+    environment:
+      - MM_SQLSETTINGS_DRIVERNAME=postgres
+      - MM_SQLSETTINGS_DATASOURCE=${MM_SQLSETTINGS_DATASOURCE}
+    depends_on:
+      - db
+    volumes:
+      - ./config:/mattermost/config
+    networks:
+      - traefik
+    labels:
+      - "traefik.enable=true"
+      # HTTP router
+      - "traefik.http.routers.mattermost-http.rule=Host(`chat.transformers.agency`)"
+      - "traefik.http.routers.mattermost-http.entrypoints=web"
+      - "traefik.http.routers.mattermost-http.middlewares=redirect-to-https"
+      # HTTPS router
+      - "traefik.http.routers.mattermost.rule=Host(`chat.transformers.agency`)"
+      - "traefik.http.routers.mattermost.entrypoints=websecure"
+      - "traefik.http.routers.mattermost.tls.certresolver=myresolver"
+      # Docker network and port settings for Traefik to detect the service
+      - "traefik.docker.network=traefik"
+      - "traefik.http.services.mattermost.loadbalancer.server.port=8065"
+
+  db:
+    image: postgres:10
+    environment:
+      - POSTGRES_USER=${POSTGRES_USER}
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
+      - POSTGRES_DB=${POSTGRES_DB}
+    volumes:
+      - db-data:/var/lib/postgresql/data
+
+volumes:
+  db-data:
+
+networks:
+  traefik:
+    external: true
+

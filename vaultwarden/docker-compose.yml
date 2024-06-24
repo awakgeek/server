@@ -1,0 +1,17 @@
+version: '3'
+
+services:
+  vaultwarden:
+    image: vaultwarden/server
+    volumes:
+      - vaultwarden-data:/data
+    ports:
+      - "8080:80" # Expose port 8080 on host and link to port 80 in the container
+    environment:
+      - ROCKET_WORKERS=8
+      - SIGNUPS_ALLOWED=no  # Disallow public signups
+      - ADMIN_TOKEN='$argon2id$v=19$m=65540,t=3,p=4$Tg6K96X5ULZzyAMvocOlSazxCtrBxgKa9vQiv72JoqU$r0gh3NwEy+NopPx+vw/vXbcUXiGYUWIl1y50uMJ2BJM'
+
+volumes:
+  vaultwarden-data:
+

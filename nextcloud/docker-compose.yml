@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+  nextcloud:
+    image: nextcloud
+    ports:
+      - "8088:80"
+    volumes:
+      - ./nextcloud_data:/var/www/html/data
+    environment:
+      - MYSQL_HOST=192.168.16.1
+      - MYSQL_DATABASE=nextcloud
+      - MYSQL_USER=nextcloud
+      - MYSQL_PASSWORD=!9VA*Ik*N2w!uc@9TLB
+
